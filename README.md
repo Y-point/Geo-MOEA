@@ -14,24 +14,10 @@ The code consists of four core Python scripts that jointly implement the Geo-MOE
 
 <br>
 
-### MOEA.py
+-**MOEA.py**: Implements the core multi-objective evolutionary algorithm of Geo-MOEA, including population initialization, non-dominated sorting, binary tournament selection, crossover/mutation operations, hypervolume (HV) indicator calculation, and Pareto optimal solution solving. It also integrates baseline experiments (QK-means/DPIVE, single-objective PSO).
 
-Implements the core multi-objective evolutionary algorithm of Geo-MOEA, including population initialization, non-dominated sorting, binary tournament selection, crossover/mutation operations, hypervolume (HV) indicator calculation, and Pareto optimal solution solving. It also integrates baseline experiments (QK-means/DPIVE, single-objective PSO).
+-**region_division.py**: Implements the binary grid-based large-scale spatial domain partition method, including dataset loading, spatial region segmentation, and region distribution visualization. It provides the foundational spatial division for the Geo-MOEA framework.
 
-<br>
+-**SC2.py**: Implements the local adaptive geo-obfuscation mechanism, including retreat-based K-means clustering, personalized privacy budget allocation, exponential mechanism for pseudo-location generation, and calculation of service quality loss (QLoss) and expected inference error (ExpErr).
 
-### region_division.py
-
-Implements the binary grid-based large-scale spatial domain partition method, including dataset loading, spatial region segmentation, and region distribution visualization. It provides the foundational spatial division for the Geo-MOEA framework.
-
-<br>
-
-### SC2.py
-
-Implements the local adaptive geo-obfuscation mechanism, including retreat-based K-means clustering, personalized privacy budget allocation, exponential mechanism for pseudo-location generation, and calculation of service quality loss (QLoss) and expected inference error (ExpErr).
-
-<br>
-
-### SC.py 
-
-Implements the baseline DPIVE/QK-means location privacy protection scheme, used as a comparative algorithm to verify the performance advantages of Geo-MOEA.
+-**SC.py**: Implements the baseline DPIVE/QK-means location privacy protection scheme, used as a comparative algorithm to verify the performance advantages of Geo-MOEA.
