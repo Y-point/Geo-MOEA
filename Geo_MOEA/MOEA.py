@@ -5,11 +5,11 @@ import math
 import numpy as np
 import random
 import matplotlib.pyplot as plt
-import SC_MOEA_QK.merge.region_division as qu
-import SC_MOEA_QK.merge.SC1 as SC1
+import region_division as qu
+import SC1 as SC1
 import copy
-import SC_MOEA_QK.merge.SC2 as SC2
-from SC_MOEA_QK.merge.SC import *
+import SC2 as SC2
+from SC import *
 # 密集位置集
 geolife = [[6, 14], [6, 15], [6, 16], [6, 17], [6, 18], [7, 15], [7, 16], [7, 17], [7, 18], [7, 19], [7, 20], [8, 12],
            [8, 14], [8, 15], [8, 16], [8, 17], [8, 18], [8, 20], [8, 21], [9, 10], [9, 16], [9, 17], [9, 18], [9, 19],
