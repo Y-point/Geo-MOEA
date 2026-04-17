@@ -1,23 +1,12 @@
-# Geo-MOEA: A Multi-Objective Evolutionary Algorithm with Geo-Obfuscation for Spatial Crowdsourcing
-
+# Project Description
+This repository contains the implementation of Geo-MOEA (Multi-Objective Evolutionary Algorithm with Geo-Obfuscation) and its comparative experiments, which is proposed for location privacy protection in Spatial Crowdsourcing (SC) scenarios. The framework integrates geo-indistinguishability, local differential privacy and multi-objective evolutionary optimization to achieve the trade-off between location privacy preservation and service quality, supporting research and experimental reproducibility in privacy-preserving spatial crowdsourcing computing.
 <br>
 
-## Project Description
+# Usage
+The repository contains core code files of Geo-MOEA and its dependent modules, with the following functions:
 
-This repository contains the implementation of Geo-MOEA (Multi-Objective Evolutionary Algorithm with Geo-Obfuscation) and its baseline comparison schemes. It is designed to protect workers' location privacy in Spatial Crowdsourcing (SC) scenarios, realize the trade-off between location privacy protection and SC service quality, and support research and experimental reproducibility in privacy-preserving spatial crowdsourcing computing.
+- `MOEA_6.py`: The main program of Geo-MOEA, which implements the complete algorithm flow including population initialization, fast non-dominated sorting, genetic crossover & mutation, Pareto optimal solution generation, hypervolume (HV) calculation, comparative experiments with QK-means and PSO, as well as result visualization.
 
-<br>
+- `region_division.py`: Implements binary grid partition of large-scale spatial location domains, including spatial dataset loading, location distribution visualization and adaptive region division to generate suitable cell units for location obfuscation.
 
-## Usage
-
-The code consists of four core Python scripts that jointly implement the Geo-MOEA framework and comparative experiments:
-
-<br>
-
--**MOEA.py**: Implements the core multi-objective evolutionary algorithm of Geo-MOEA, including population initialization, non-dominated sorting, binary tournament selection, crossover/mutation operations, hypervolume (HV) indicator calculation, and Pareto optimal solution solving. It also integrates baseline experiments (QK-means/DPIVE, single-objective PSO).
-
--**region_division.py**: Implements the binary grid-based large-scale spatial domain partition method, including dataset loading, spatial region segmentation, and region distribution visualization. It provides the foundational spatial division for the Geo-MOEA framework.
-
--**SC2.py**: Implements the local adaptive geo-obfuscation mechanism, including retreat-based K-means clustering, personalized privacy budget allocation, exponential mechanism for pseudo-location generation, and calculation of service quality loss (QLoss) and expected inference error (ExpErr).
-
--**SC.py**: Implements the baseline DPIVE/QK-means location privacy protection scheme, used as a comparative algorithm to verify the performance advantages of Geo-MOEA.
+- `L-SRR`: The `L-SRR` folder contains a reproduction of the L-SRR scheme proposed by Wang et al. 
