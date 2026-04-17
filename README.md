@@ -5,8 +5,12 @@ This repository contains the implementation of Geo-MOEA (Multi-Objective Evoluti
 # Usage
 The repository contains core code files of Geo-MOEA and its dependent modules, with the following functions:
 
-- `MOEA_6.py`: The main program of Geo-MOEA, which implements the complete algorithm flow including population initialization, fast non-dominated sorting, genetic crossover & mutation, Pareto optimal solution generation, hypervolume (HV) calculation, comparative experiments with QK-means and PSO, as well as result visualization.
+- `MOEA.py`: The main program of Geo-MOEA, which implements the complete algorithm flow including population initialization, fast non-dominated sorting, genetic crossover & mutation, Pareto optimal solution generation, hypervolume (HV) calculation, comparative experiments with QK-means and PSO, as well as result visualization.
 
 - `region_division.py`: Implements binary grid partition of large-scale spatial location domains, including spatial dataset loading, location distribution visualization and adaptive region division to generate suitable cell units for location obfuscation.
+
+- `SC.py`: Implements core privacy protection and quality evaluation functions for spatial crowdsourcing tasks.
+
+- `SC1.py` & `SC2.py`: Provides supplementary implementations of key algorithm modules and optimization operations.
 
 - `L-SRR`: The `L-SRR` folder contains a reproduction of the L-SRR scheme proposed by Wang et al. 
