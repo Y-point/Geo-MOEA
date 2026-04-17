@@ -127,9 +127,9 @@ def divison(dataset,max1,min1,max2,min2,length,width,flag,count,Deep):
             if abs(l1 - l2) <=5:
                 break
             if l1>l2:
-                mid -= 0.1
+                mid -= 0.05
             else:
-                mid += 0.1
+                mid += 0.05
     if flag == 1:
         mid = (min1 + max1) / 2
         while True:
@@ -149,9 +149,9 @@ def divison(dataset,max1,min1,max2,min2,length,width,flag,count,Deep):
             if abs(l1-l2)<=5:
                 break
             if l1>l2:
-                mid -= 0.1
+                mid -= 0.05
             else:
-                mid += 0.1
+                mid += 0.05
     # for f in range(min1,max1+1):
     #     for s in range(min2,max2+1):
     #         if count < (L//2):
